@@ -48,3 +48,28 @@ function main() {
 }
 main();
 
+
+let time = 0.1;
+let quizTimeMin = time * 60 * 60;
+let quizTime = quizTimeMin / 60;
+let counting = document.getElementById("countdown");
+function timer() {
+    let quizTimer = setInterval(function () {
+        if (quizTime <= 0) {
+            clearInterval(quizTimer);
+            main.break;
+            showinterface.showScore();
+        } else {
+            quizTime--;
+            let sec = Math.floor(quizTime % 60);
+            let min = Math.floor(quizTime / 60) % 60;
+            if (sec < 10){
+                counting.innerHTML = `TIME: ${"0" + min} : ${"0" + sec}`;
+            }else {
+                counting.innerHTML = `TIME: ${"0" + min} : ${sec}`;
+            }
+            
+        }
+    }, 1000)
+}
+timer();

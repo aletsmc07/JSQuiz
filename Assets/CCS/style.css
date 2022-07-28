@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 html, body {
@@ -22,9 +22,9 @@ html, body {
 
 h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
-    padding: 2px 0;
+    padding: 2px;
 }
 
 #questions {
@@ -53,4 +53,12 @@ h1 {
 #numberQuestion {
     font-size: 20px;
     color: white;
+}
+
+#countdown {
+    color: white;
+    background: rgb(224, 93, 5);
+    background-size: auto;
+    padding: 10px;
+    
 }
